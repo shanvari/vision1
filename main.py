@@ -62,7 +62,6 @@ for image in images:
   plt.plot(list(range(256)), hist2)
 
   plt.show()
-خروجی:
  ![image](https://user-images.githubusercontent.com/45328431/219899333-84242850-40f5-4ce1-939b-30e84ae472df.png)
 
 number of gray-level= 4
@@ -140,7 +139,6 @@ imshow(avg)
 #get downsample from average of image
 downsample2 = avg[0::2,0::2]
 imshow(downsample2)
-خروجی:
  ![image](https://user-images.githubusercontent.com/45328431/219899198-cf1254e8-181b-4831-a5b8-b7873be7dad6.png)
  MSE=111.26028060913086  
 
@@ -190,7 +188,6 @@ for i in range(len(upsample2_2)):
 
 imshow(upsample1_1,upsample1_2,title =['MSE=' + str((np.square(upsample1_1 - img)).mean()),'MSE=' + str((np.square(upsample1_2 - img)).mean())])
 imshow(upsample2_1,upsample2_2,title =['MSE=' + str((np.square(upsample2_1 - img)).mean()),'MSE=' + str((np.square(upsample2_2 - img)).mean())])
-خروجی:
  ![image](https://user-images.githubusercontent.com/45328431/219899174-0d25aaa0-da6a-4fec-b7bb-b0245e54d514.png)
 
  ![image](https://user-images.githubusercontent.com/45328431/219899164-49d0dae5-8002-4880-8a03-e435ca668ee2.png)
